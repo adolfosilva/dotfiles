@@ -1,0 +1,53 @@
+! -----------------------------------------------------------------------------
+! File: gruvbox-urxvt256.xresources
+! Description: Retro groove colorscheme generalized
+! Author: morhetz <morhetz@gmail.com>
+! Source: https://github.com/morhetz/gruvbox-generalized
+! Last Modified: 13 Dec 2013
+! -----------------------------------------------------------------------------
+
+! URxvt.termName: urxvt
+URxvt.iconFile: /usr/share/icons/gnome/256x256/apps/terminal.png
+URxvt.font: xft:Inconsolata:pixelsize=16
+URxvt.scrollBar: off
+URxvt.geometry: 90x36
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 1
+URxvt.perl-lib: /usr/lib/urxvt/perl
+URxvt.perl-ext-common: matcher,readline,selection-to-clipboard,fullscreen,font-size
+URxvt.letterSpace: 1
+
+! keybindings
+URxvt.keysym.F11: perl:fullscreen:switch
+URxvt.keysym.C-Up: perl:font-size:increase
+URxvt.keysym.C-Down: perl:font-size:decrease
+
+! hard contrast: URxvt.background: #1d2021
+URxvt.background: #141414
+! soft contrast: URxvt.background: #32302f
+URxvt.foreground: #ebdbb2
+! Black + DarkGrey
+URxvt.color0:  #282828
+URxvt.color8:  #928374
+! DarkRed + Red
+URxvt.color1:  #cc241d
+URxvt.color9:  #fb4934
+! DarkGreen + Green
+URxvt.color2:  #98971a
+URxvt.color10: #b8bb26
+! DarkYellow + Yellow
+URxvt.color3:  #d79921
+URxvt.color11: #fabd2f
+! DarkBlue + Blue
+URxvt.color4:  #458588
+URxvt.color12: #83a598
+! DarkMagenta + Magenta
+URxvt.color5:  #b16286
+URxvt.color13: #d3869b
+! DarkCyan + Cyan
+URxvt.color6:  #689d6a
+URxvt.color14: #8ec07c
+! LightGrey + White
+URxvt.color7:  #a89984
+URxvt.color15: #ebdbb2
+
