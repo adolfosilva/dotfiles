@@ -31,6 +31,8 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+set spelllang=en
+set spell
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
