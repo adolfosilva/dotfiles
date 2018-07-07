@@ -1,0 +1,23 @@
+[user]
+	name = Adolfo Silva
+	email = code@adolfosilva.org
+[core]
+	autocrlf = input
+	editor = vim
+[oush]
+	default = matching
+[push]
+	default = matching
+[alias]
+	quick-stats = ! /usr/local/bin/git-quick-stats
+	today = log --since=midnight
+	ignore = "!f() { echo \"$1\" >> .gitignore; }; f"
+	fixup = "!f() { git commit --fixup=$(git rev-list HEAD -n1 \"$1\"); }; f"
+	fulllog = log -p --stat
+	st = status -sb
+	co = commit -v
+	br = branch
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	ds = diff --staged
+[merge]
+	tool = vimdiff
